@@ -7,6 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1Q11gDGa6XKVbL3mJI4mN7R9rJ75yjre4
 """
 
+pip install psycopg2
+
 import psycopg2
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -26,6 +28,8 @@ except psycopg2.Error as e:
     print("Erro ao conectar ao PostgreSQL:", e)
 
 cur = conn.cursor()
+
+
 
 populacao = pd.read_sql_query("SELECT * FROM populacao", conn)
 municipio = pd.read_sql_query("SELECT * FROM municipio", conn)
