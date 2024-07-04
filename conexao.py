@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1Q11gDGa6XKVbL3mJI4mN7R9rJ75yjre4
 """
 
-pip install psycopg2
+pip install streamlit
 
 import psycopg2
 import pandas as pd
